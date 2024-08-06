@@ -1,1 +1,2 @@
 docker rmi -f $(docker images -aq)   -- delete all images
+docker rm -v -f $(docker ps -qa)     -- delete all containers
