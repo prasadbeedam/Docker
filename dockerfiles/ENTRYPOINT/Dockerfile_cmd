@@ -1,0 +1,8 @@
+FROM almalinux:9
+CMD [ "ping","-c5","google.com" ]
+# ENTRYPOINT [ "ping","-c5" ]
+
+# docker build -t entrypoint:1.1
+# docker run entrypoint:1.1 --- now it will ping the google.com
+# docker run entrypoint:1.1 ping -c5 yahoo.com  >>>> now it will override the CMD , it will connect yahoo.com
+
