@@ -1,6 +1,7 @@
 FROM almalinux:9
-CMD [ "ping","-c5","google.com" ]
-# ENTRYPOINT [ "ping","-c5" ]
+CMD [ "ping","-c5","google.com" ]  
+
+#using this image we can ping any site 
 
 # docker build -t entrypoint:1.1
 # docker run entrypoint:1.1 --- now it will ping the google.com
