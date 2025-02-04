@@ -1,2 +1,7 @@
 docker rmi -f $(docker images -aq)   -- delete all images
 docker rm -v -f $(docker ps -qa)     -- delete all containers
+
+
+docker images
+docker tag mongodb:v1 prasadyadav99/mangodb:v1
+docker push prasadyadav99/mangodb:v1
